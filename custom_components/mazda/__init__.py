@@ -51,7 +51,7 @@ PLATFORMS = [
 ]
 
 
-async def with_timeout(task, timeout_seconds=30):
+async def with_timeout(task, timeout_seconds=60):
     """Run an async task with a timeout."""
     return await asyncio.wait_for(task, timeout_seconds)
 
